@@ -36,7 +36,6 @@ __global__ void count_events_cuda_forward_kernel(
     int tidx = (t+1) * H * W + linIdx;
     int tidx_min_1 = t * H * W + linIdx;
 
-    scalar_t i0 = imgs[tidx_min_1];
     scalar_t i1 = imgs[tidx];
 
     int num_events, polarity; 
